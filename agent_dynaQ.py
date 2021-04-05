@@ -1,3 +1,8 @@
+import numpy as np
+import seaborn as sns
+import matplotlib.pyplot as plt
+
+
 class Agent():
 
     def __init__(self, alpha=0.5, gamma=0.9, epsilon=0.1):
