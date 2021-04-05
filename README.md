@@ -2,7 +2,7 @@
 
 This repository focuses on training an agent to find its way in the following GridWorld:
 
-![png](./utils/env.png)
+![png](./utils/env.png =100x20)
 
 
 In order to accomplish this task, I apply here DynaQ algorithm, which is an improvement over Q-Learning, since in the end of each episode of the interaction between agent and environment some simulated steps are taken by a model learned by the agent. Hence, it keeps updating further its action values without having to interact with the environment. It speeds up the training time, especially when we look at the time steps taken on each episode as we progress the training process.
@@ -24,9 +24,9 @@ For each episode:
 6. Update _model_: _model(S,A) <- R, S' (assuming deterministic environment)
 7. **Planning**:
 
-    (a) S <- random previously observed state
-    (b) A <- random action previously taken in S
-    (c) S', R <- model(S,A)
+    (a) S <- random previously observed state  
+    (b) A <- random action previously taken in S  
+    (c) S', R <- model(S,A)  
     (d) _Q(S,A) <- Q(S,A) + α(R + γmax<sub>a</sub>Q(S',a) - Q(S,A))_
 
 _______
