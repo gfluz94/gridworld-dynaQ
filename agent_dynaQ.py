@@ -63,7 +63,7 @@ class Agent():
             self.__model[self.__last_state] = {}
             self.__model[self.__last_state][self.__last_action] = (state, reward)
   
-    def start(self, env: Environment):
+    def start(self, env):
         self.__last_state = env.hash_state(*env.start_pos)
 
     def take_action(self, state):
