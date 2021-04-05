@@ -5,7 +5,7 @@ This repository focuses on training an agent to find its way in the following Gr
 <img src="./utils/env.png" alt="drawing" width="500"/>
 
 
-In order to accomplish this task, I apply here DynaQ algorithm, which is an improvement over Q-Learning, since in the end of each episode of the interaction between agent and environment some simulated steps are taken by a model learned by the agent. Hence, it keeps updating further its action values without having to interact with the environment. It speeds up the training time, especially when we look at the time steps taken on each episode as we progress the training process.
+In order to accomplish this task, I applied DynaQ algorithm, which is an improvement over Q-Learning, since in the end of each episode of the interaction between agent and environment some simulated steps are taken using a model learned by the agent. Hence, it keeps updating further the agent's action values without any need to interact with the environment. It helps speeding up training time, especially when we look at the number of steps taken on each episode as we progress in the training process.
 
 The final results are shown below:
 
